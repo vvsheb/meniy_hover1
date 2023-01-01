@@ -1,0 +1,35 @@
+body{
+    background-color: #262626;
+}
+.menu-area{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.menu-area a{
+    position: relative;
+    text-decoration: none;
+    padding: 10px 0;
+    font-family:bignoodletitling;
+    font-size:25px;
+    color: rgba(255,255,0.5);
+display: inline-block;
+    margin: 20px;
+}
+.menu-area a:hover:before{
+    width: 100%;
+}
+.menu-area a:before{
+    content: attr(data-text);
+    border-bottom: 3px solid #ef4366;
+    color:#fff;
+    white-space: nowrap;
+    width: 0%;
+    overflow: hidden;
+    padding: 10px 0;
+    transition: .4s;
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
